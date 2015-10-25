@@ -8,7 +8,7 @@
 
 1. Una vez seleccionadas las características, ir a la opción *Build* y luego descargar la librería.
 
- ![Build Modernizr](/Img/Instalacion/02.png?raw=true "Build Modernizr")
+ ![Build Modernizr](/1. Detección de caracteristicas con Modernizr/HOL.A/Img/Instalacion/02.png?raw=true "Build Modernizr")
 
  **NOTA: Para efectos de estos Hands on lab, podemos descargar la versión de desarrollo que contiene todas las características de Modernizr desde este [enlace](https://modernizr.com/download?do_not_use_in_production).**
 
@@ -30,7 +30,7 @@
 
 1. Si abrimos la página en un navegador Chrome, podremos entrar a inspeccionar el código con las developer tools y veremos algo como esto:
 
- ![Navegador](/Img/Instalacion/03.png?raw=true "Navegador")
+ ![Navegador](/1. Detección de caracteristicas con Modernizr/HOL.A/Img/Instalacion/03.png?raw=true "Navegador")
 
 1. Ahora vamos a agregar una referencia a Modernizr con la siguiente línea en el elemento `<head>` 
 
@@ -42,7 +42,7 @@
 
  Para tener en cuenta: Las features que no soporta el navegador se reconocen porque se agregan con el prefijo __no-*__ 
 
- ![Navegador](/Img/Instalacion/04.png?raw=true "Navegador")
+ ![Navegador](/1. Detección de caracteristicas con Modernizr/HOL.A/Img/Instalacion/04.png?raw=true "Navegador")
  
 ## Tarea 2: Detectando features mediante Javascript con Modernizr
 
@@ -92,11 +92,11 @@ Ahora, vamos a hacer un ejemplo para que veamos esta detección de features en f
 
  Esto sucede al abrir en Google Chrome:
 
- ![Chrome feature detection](/Img/Js/01.png?raw=true "Chrome feature detection")
+ ![Chrome feature detection](/1. Detección de caracteristicas con Modernizr/HOL.A/Img/Js/01.png?raw=true "Chrome feature detection")
 
  Y esto sucede al abrir en Mozilla Firefox:
 
- ![Mozilla feature detection](/Img/Js/02.png?raw=true "Mozilla feature detection")
+ ![Mozilla feature detection](/1. Detección de caracteristicas con Modernizr/HOL.A/Img/Js/02.png?raw=true "Mozilla feature detection")
 
  Ahora, inténtalo con algunas otras características. ¿Qué resultados obtienes al comparar diferentes navegadores?
  
@@ -158,11 +158,11 @@ Ahora, vamos a hacer un ejemplo para que veamos esta detección de features en f
 1. Ahora lo que haremos es comparar el funcionamiento en dos navegadores.
  Al abrir Google Chrome, que actualmente soporta efectos de reflejo, el resultado que veremos es este:
   
- ![Chrome feature detection](/Img/Css/01.png?raw=true "Chrome feature detection")
+ ![Chrome feature detection](/1. Detección de caracteristicas con Modernizr/HOL.A/Img/Css/01.png?raw=true "Chrome feature detection")
   
  Luego probamos en Microsoft Edge, y el resultado es el siguiente:
   
- ![Edge feature detection](/Img/Css/02.png?raw=true "Chrome feature detection")
+ ![Edge feature detection](/1. Detección de caracteristicas con Modernizr/HOL.A/Img/Css/02.png?raw=true "Chrome feature detection")
  
 ## Enlaces recomendados
 
