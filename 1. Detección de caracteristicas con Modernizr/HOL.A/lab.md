@@ -4,7 +4,7 @@
 
 1. Ingresar a la [página de descarga](https://modernizr.com/download) de [Modernizr](https://modernizr.com/). Allí seleccionar las características que deseamos que la librería incluya para nuestra aplicación.
 
- ![Descarga de Modernizr](/Img/Instalacion/01.png?raw=true "Descarga de Modernizr")
+ ![Descarga de Modernizr](/1. Detección de caracteristicas con Modernizr/HOL.A/Img/Instalacion/01.png?raw=true "Descarga de Modernizr")
 
 1. Una vez seleccionadas las características, ir a la opción *Build* y luego descargar la librería.
 
