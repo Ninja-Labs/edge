@@ -1,0 +1,22 @@
+{
+  "name": "devcamp",
+  "version": "1.0.0",
+  "description": "Workshop sobre librerias modernas no atadas a ningun browser, puntualmente usando Anuglar.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "keywords": [
+    "angularjs",
+    "workshop"
+  ],
+  "author": "Cristian Moreno",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.2.0"
+  },
+  "engines": {
+    "node": ">=4.1.0"
+  }
+}
