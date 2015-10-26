@@ -35,18 +35,18 @@ $ gulp
 
 ## Instruciones
 
-  1. Vamos a empezar por hacer una aplicación angularjs simple. Vamos a explicar cada paso en el siguiente ejercicio. En el archivo app.js, escriba el contenido exactamente como se ve aquí: ![Alt text](/assets/demo1.png?raw=true "Demo 1")
-  2. Abrir index.html. Modifique la etiqueta <body> por lo que se ve así: ![Alt text](/assets/demo3.png?raw=true "Demo 3")
-  3. Incluir la referencia de Angular.JS en nuestro archivo index.html, como se ve aca: ![Alt text](/assets/demo2.png?raw=true "Demo 2")
-  4. Abrir  main/main.controller.js. Escriba el contenido tal y como se puede ver aquí: ![Alt text](/assets/demo4.png?raw=true "Demo 4")
-  5. Ir a index.html. Modificar la etiqueta ```<div class="main">```  por lo que se ve aquí: ![Alt text](/assets/demo5.png?raw=true "Demo 5")
-  6. En el mismo archivo index.html vamos a incluir el archivo app.js que contiene nuestro módulo y el controller que acabamos de modificar llamado main.controller.js quedando de esta manera: ![Alt text](/assets/demo6.png?raw=true "Demo 6")
-  7. Dentro del index.html en ```<div class="main">``` modifique el elemento H1 para que se vea asi: ![Alt text](/assets/demo7.png?raw=true "Demo 7")
-  8. Para ver la aplicación angularjs en el navegador, vamos abrir una consola ubicados en la carpeta de nuestro proyecto y escribiremos la instrucción gulp. ![Alt text](/assets/demo8.png?raw=true "Demo 8")
-  9. En el navegador visitar  http://localhost:8080. ![Alt text](/assets/demo10.png?raw=true "Demo 10")
-  10. Ahora que vimos que nuestra aplicación está funcionando hasta ahora, vamos a realizar un Refactor de nuestro código para empezar a utilizar las mejores prácticas en la construcción de aplicaciones con Angular.js. Abrir index.html y modificar la etiqueta ```<div class="main" ng-controller="MainController">``` agregando un alias al control para usar de una forma mas comoda como se muestra a continuación: ![Alt text](/assets/demo11.png?raw=true "Demo 11")
-  12. Dentro del index.html  en ```<div class="main">```, modifique el elemento ```<h1>``` para que se vea asi: ![Alt text](/assets/demo12.png?raw=true "Demo 12")
-  13. Abrir main/main.controller.js y modificar el archivo para que se vea de la siguente manera, si quieres saber porque realizamos esta modificación visita [Angular Style Guide de Jonh Papa](https://github.com/johnpapa/angular-styleguide) ![Alt text](/assets/demo13.png?raw=true "Demo 13")
+  1. Vamos a empezar por hacer una aplicación angularjs simple. Vamos a explicar cada paso en el siguiente ejercicio. En el archivo app.js, escriba el contenido exactamente como se ve aquí: ![Alt text](./assets/demo1.png?raw=true "Demo 1")
+  2. Abrir index.html. Modifique la etiqueta <body> por lo que se ve así: ![Alt text](./assets/demo3.png?raw=true "Demo 3")
+  3. Incluir la referencia de Angular.JS en nuestro archivo index.html, como se ve aca: ![Alt text](./assets/demo2.png?raw=true "Demo 2")
+  4. Abrir  main/main.controller.js. Escriba el contenido tal y como se puede ver aquí: ![Alt text](./assets/demo4.png?raw=true "Demo 4")
+  5. Ir a index.html. Modificar la etiqueta ```<div class="main">```  por lo que se ve aquí: ![Alt text](./assets/demo5.png?raw=true "Demo 5")
+  6. En el mismo archivo index.html vamos a incluir el archivo app.js que contiene nuestro módulo y el controller que acabamos de modificar llamado main.controller.js quedando de esta manera: ![Alt text](./assets/demo6.png?raw=true "Demo 6")
+  7. Dentro del index.html en ```<div class="main">``` modifique el elemento H1 para que se vea asi: ![Alt text](./assets/demo7.png?raw=true "Demo 7")
+  8. Para ver la aplicación angularjs en el navegador, vamos abrir una consola ubicados en la carpeta de nuestro proyecto y escribiremos la instrucción gulp. ![Alt text](./assets/demo8.png?raw=true "Demo 8")
+  9. En el navegador visitar  http://localhost:8080. ![Alt text](./assets/demo10.png?raw=true "Demo 10")
+  10. Ahora que vimos que nuestra aplicación está funcionando hasta ahora, vamos a realizar un Refactor de nuestro código para empezar a utilizar las mejores prácticas en la construcción de aplicaciones con Angular.js. Abrir index.html y modificar la etiqueta ```<div class="main" ng-controller="MainController">``` agregando un alias al control para usar de una forma mas comoda como se muestra a continuación: ![Alt text](./assets/demo11.png?raw=true "Demo 11")
+  12. Dentro del index.html  en ```<div class="main">```, modifique el elemento ```<h1>``` para que se vea asi: ![Alt text](./assets/demo12.png?raw=true "Demo 12")
+  13. Abrir main/main.controller.js y modificar el archivo para que se vea de la siguente manera, si quieres saber porque realizamos esta modificación visita [Angular Style Guide de Jonh Papa](https://github.com/johnpapa/angular-styleguide) ![Alt text](./assets/demo13.png?raw=true "Demo 13")
 
 #### ¡Impresionante! Haz construido una aplicación angularjs. ¿Cómo funciona?
 
@@ -71,9 +71,9 @@ Hasta ahora este es nuestro flujo de trabajo típico al hacer una aplicación an
 
 ## Filtros
 
-1. Vamos a añadir más datos al controlador y los mostraremos en la vista. En el controlador, agregue una propiedad llamada product. Hagalo igual a un objeto con las siguientes propiedades: ![Alt text](/assets/demo16.png?raw=true "Demo 16")
-2. Luego en el index.html debajo del elemento ```<h2>``` vas agregar el siguiente código:  ![Alt text](/assets/demo17.png?raw=true "Demo 17")
-3. Actualmente el precio del producto se muestra como un número. Sería mejor darle formato como moneda. En lugar de cambiar los datos en el controlador, vamos a usar un filtro de angularjs para dar formato a los datos en la vista. En index.html en ```<p class = "price">```, cambiar la expresión de este aspecto: ![Alt text](/assets/demo18.png?raw=true "Demo 18")
+1. Vamos a añadir más datos al controlador y los mostraremos en la vista. En el controlador, agregue una propiedad llamada product. Hagalo igual a un objeto con las siguientes propiedades: ![Alt text](./assets/demo16.png?raw=true "Demo 16")
+2. Luego en el index.html debajo del elemento ```<h2>``` vas agregar el siguiente código:  ![Alt text](./assets/demo17.png?raw=true "Demo 17")
+3. Actualmente el precio del producto se muestra como un número. Sería mejor darle formato como moneda. En lugar de cambiar los datos en el controlador, vamos a usar un filtro de angularjs para dar formato a los datos en la vista. En index.html en ```<p class = "price">```, cambiar la expresión de este aspecto: ![Alt text](./assets/demo18.png?raw=true "Demo 18")
 4. ¡Excelente! El precio del producto ha cambiado de un número a una moneda con formato. ¿Cómo funciona?
 
 + Angularjs obtiene el valor de product.price
@@ -87,8 +87,8 @@ Hasta ahora este es nuestro flujo de trabajo típico al hacer una aplicación an
 ## ng-repeat
 1. Eliminemos en el MainController la propiedad product.
 2. Agregamos una propiedad products tal y como se muestra acá: 
-![Alt text](/assets/demo19.png?raw=true "Demo 19")
-3. En la vista reemplace el contenido del elemento ```<div class="col-md-6">``` por esto: ![Alt text](/assets/demo20.png?raw=true "Demo 20")
+![Alt text](./assets/demo19.png?raw=true "Demo 19")
+3. En la vista reemplace el contenido del elemento ```<div class="col-md-6">``` por esto: ![Alt text](./assets/demo20.png?raw=true "Demo 20")
 
 Hasta ahora hemos hecho una aplicación angularjs estática mediante la adición de propiedades en el controlador y mostrando en la vista. Angularjs es un framework para la creación de aplicaciones web dinámicas, así que vamos a empezar a hacer esta aplicación interactiva.
 
@@ -96,10 +96,10 @@ Hasta ahora hemos hecho una aplicación angularjs estática mediante la adición
 
 1. En el controlador en el array vm.products, añadir una nueva propiedad llamada likes en cada uno de los elementos de este array. 
 2. Establecer la propiedad likes en 0
-3. En la vista debajo de ```<p class="date">```, escriba un elemento para rating: ![Alt text](/assets/demo21.png?raw=true "Demo 21")
+3. En la vista debajo de ```<p class="date">```, escriba un elemento para rating: ![Alt text](./assets/demo21.png?raw=true "Demo 21")
 4. Dentro ```<p class="likes">```, mostrar los likes del producto usando una expresión.
-5. De vuelta en el controlador después de vm.products, adjunte una nueva propiedad a con el nombre plusOne. Hacer esta propiedad a la siguiente función. ![Alt text](/assets/demo22.png?raw=true "Demo 22")
-6. Modificar en la vista ```<p class="likes">``` por el siguiente codigo y luego ir al browser refrescar y hacer click en los likes: ![Alt text](/assets/demo23.png?raw=true "Demo 23")
+5. De vuelta en el controlador después de vm.products, adjunte una nueva propiedad a con el nombre plusOne. Hacer esta propiedad a la siguiente función. ![Alt text](./assets/demo22.png?raw=true "Demo 22")
+6. Modificar en la vista ```<p class="likes">``` por el siguiente codigo y luego ir al browser refrescar y hacer click en los likes: ![Alt text](./assets/demo23.png?raw=true "Demo 23")
 
 ¡Excelente! Cada vez que haga clic en el número de likes, el número aumenta. ¿Cómo funciona?
 
@@ -122,7 +122,7 @@ Ahora vamos adicionar un nuevo evento para hacer click en los "No me gusta"
 4. La función en el controlador actualiza el estado de los datos.
 5. La vista cambia automáticamente y muestra los datos actualizados. La página no necesita ser recargada.
 
-![Alt text](/assets/lean.png?raw=true "Learn")
+![Alt text](,/assets/lean.png?raw=true "Learn")
 
 ## Contribución
 
