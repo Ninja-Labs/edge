@@ -135,3 +135,26 @@ En las siguientes tareas se explorán las diferentes herramientas que MS Edge po
 1. Presionamos nuevamente F12, vamos a la pestaña debugger y allí navegamos una vez más hasta el archivo `juank.io/assets/js/sctipt.js`
 1. deshabilitamos nuevamente el breakpoint y recargamos la página
 1. el breakpoint no detiene el browser puesto que ha sido deshabilitado
+
+##Tarea 5 - Network (Visor de tráfico de Red)
+
+1. Desde Microsoft Edge abrimos la página http://www.eltiempo.com
+1. Ahora vamos a NetWork o Presionar `Ctrl + 4` (no usar teclado númerico)
+1. Damos click en el botón **Stop** (sino estaba previamente detenido) <br/>![Stop](img/HOL-39.png)
+1. Y ahora el boton "Clear session" <br/>![Clear session](img/HOL-40.png)
+1. Seguidamente click en "play" y recargamos la página <br/>![Reload](img/HOL-41.png)
+1. En este recuadro se puede apreciar todos los request necesarios para cargar por completo el sitio, y apreciar una linea de tiempo que indica cuando inicio su ejecución y cuanto terminó
+1.  Damos click en cualquiera de los request listados y podemos obsercvar al costado derecho todos los detalles del mismo incluyendo
+	* Headers
+	* Body
+	* Parameters
+	* Cookies
+    ![Stop](img/HOL-42.png)
+
+
+##Tarea 6 - Performance
+##Tarea 7 - Memoria
+##Tarea 8 - Emulación
+
+
+
