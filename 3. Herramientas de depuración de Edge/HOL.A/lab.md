@@ -72,14 +72,64 @@ En las siguientes tareas se explorán las diferentes herramientas que MS Edge po
 1. Cambiamos ahora la propiedad alto asignando 60, inmediatamente se puede ver su efecto en la página
 1. En un escenario real todas las caracteristicas revisadas permiten hacer ajustes a la visualización del sitio web, especialmente durante la etapa de definición del front End. Sin embargo es dificil llevar registro de todos los cambios realizados a nivel de hojas de estilo por lo que Microsoft Edge muestra en la pestaña "Changes" un resumen de todos los cambios realizados en cada cambio de archivos de estilo. <br/>![Resumen de cambios](img/HOL-19.png)
 
-##Tarea 3 - El explorador del DOM  (Document Object Model)
+##Tarea 3 - La Consola
 
+1. Abrir una nueva pestaña de **Microsoft Edge**
+1. Navegar a https://juank.io , esperar a que cargue
+1. Presionar F12 para abrir las herramientas de desarrollo
+1. Presionar `Ctrl + 2` (no usar teclado númerico) para ir a la Consola
+1. Una vez abierta la consola navegar en el explorador a esta URL http://www.eltiempo.com/
+1. La consola debe arrojar una serie de mensajes similares a estos<br/>![Resumen de cambios](img/HOL-20.png)
+1. En la consola se puede ver información relacionada con el proceso de carga de la página web así como mensajes relacionados con la ejecución de scripts. Para un desarrollador tambien es posible enviar desde sus scripts información relevante de la ejecución de los mismos.
+1. Al presionar click derecho sobre la superficie de la consola aparecerá el sieguiente menú de opciones <br/>![Opciones consola](img/HOL-21.png)
+1. Desactivar y reactivar los siguientes Flags para observar el comportamiento en el reporte de mensajes de la consola
+	* Errors
+	* Warnings
+	* Messages
+	* Log
+	* Display all
 
+##Tarea 4 - El depurador
 
-
- 
-
-
-
-
-
+1. Abrir Microsoft Edge y navegar a https://juank.io/hol-azure-para-desarrolladores-fundamentos-websites/
+1. Presionar F12 para abrir las herramientas para desarrolladores
+1. Presionar `Ctrl + 3` (no usar teclado númerico) para ir al depurador (o debugger)
+1. Presionar `Ctrl + o` para abrir el explorador de contenido en caso de que no este abierto<br/>![Opciones consola](img/HOL-23.png)
+1. En este panel aparecerán listados todos los recursos a los que acceder el website en el proceso de carga no importa si estos están hosteados en otro lugar.  
+1. Dar click en **Local Storage**
+1. Inspeccionar cada uno de los nodos allí presentes, este nodo corresponde con los datos guardados en el browser por cada sitio listado
+1. Inspeccionar **Session Storage** Este nodo almacena información relevante solo para la sesión actual
+1. Inspeccionar **Cookies** 
+1. Inspeccionar `juank.io/css`  y  `juank.io/js` , allí se encuentran todas las hojas de estilo o scripts hosteadas por el sitio en dicha ruta, pero bien podrian figurar otros archivos dependiendo de las desiciones del desarrollador
+1. En la barra de pestañas (ver imagen) seleccionar "Close All Tabs"<br/>![Close All Tabs](img/HOL-24.png)
+1. En el explorador de contenido abrir `juank.io/js/prism.js` y en el panel de herramientas presionar el botón que se veen la imagen<br/>![Close All Tabs](img/HOL-25.png)
+1. Este botón, cuando esta activo, marca el código como propio del desarrollador, cuando es inactivo lo marca como Libreria, esto es útil para que al depurar solo se haga pasos al código del desarrollador y no a librerias de terceros.
+1. Los siguientes archivos de esa carpeta deben ser marcados como Libreria y como código de usuario según corresponda con esta imagen.<br/>![Codigo de libreria y de usuario](img/HOL-26.png)
+1. En el explorador de contenido abrir `juank.io/js/script.js`
+1. El contenido de este archivo luce tal como está almacenado en el servidor, en este caso particular con espacios demás entre cada línea<br/>![Espacios en blanco excedentes ](img/HOL-27.png)
+1. En el panel de herramientas presionar el botón "Pretty Print"<br/>![Codigo de libreria y de usuario](img/HOL-28.png)
+1. El código ahora se muestra completamente reformateado para aumentar su legibilidad, se han eliminado espacios innecesarios y se han identado correctamente las líenas.<br/>![Prettify code](img/HOL-29.png)
+1. Estando el código de esta forma ponemos un `breakpint` en la línea 11 justo como se ve en la imagen<br/>![breakpoint](img/HOL-30.png)
+1. Recargamos la página y el depurador se detiene justo donde se puso el breakpoint<br/>![breakpoint](img/HOL-31.png)
+1. En el costado derecho podemos ver el panel "Watches" donde se puede ver el estado de las variables al momento de tocar el breakpoint e incluso navegar en sus propiedades.<br/>![Watches](img/HOL-32.png)
+1. Desde este panel es posible agregar otras variables a parte de las detectadas automáticamente, presionamos el ícono de agregar inspección y agregamos una nueva variable llamada "this.testValue"<br/>![Add Watch](img/HOL-33.png)
+1.  Esta variable no existe en el código fuente, si existiera nos mostraría su valor tal como lo hace con las adicionadas automáticamente
+1. En la parte inferior del depurador se puede visualizar la consola y justo bajo ella hay un símbolo del sistema <br/>![Add Watch](img/HOL-34.png)
+1. allí podemos ejecutar comandos de javascript, entre ellos crear una nueva variable 'al vuelo' así que crearemos la variable `this.testValue` ejecutando el siguiente comando en la consola (donde esta la flecha)
+```
+this.testValue = "Hello World Edge Tools";
+```
+1. Ahora al revisar de nuevo en la ventana de inspección (Watches) podemos ver la variable asignada <br/>![Add Watch](img/HOL-35.png)
+1. Desde este mismo panel tambien podemos cambiar el valor de la varible simplemente dando doble click y editando. Asignamos el valor "Hola Mundo Edge Tools"
+1. De regreso a la consola ingresamos el siguiente comando obteniendo en la consola como respuesta la variable con el valor actualizado. Identificar como la consola también ofrece Intellisense en las variables creadas dinámicamante.
+```
+this.testValue
+```
+1. De nuevo en el costado derecho, identificar el panel "Call Stack"  <br/>![Call Stack](img/HOL-36.png)
+1. Allí se lista la "Pila de Llamadas" que refleja el orden o anidamiento de funciones que se han ejecutado al llamar una función determinada, esto permite saber que función ha llamado a la función actual en ejecución y así susecivamente hasta identificar toda la cadena de funciones llamadas hasta llegar a la función actual. Dar click en la pestaña Breakpoints. 
+1. Allí se listan los breakpoints creados, hasta el momento solo 1. <br/>![Break Points](img/HOL-37.png)
+1. Damos click en el checkbox para deshabilitarlo
+1. En el explorador del DOM presionamos el botón **play** para que el sitio continue su ejecución<br/>![Break Points](img/HOL-38.png)
+1. Presionamos nuevamente F12, vamos a la pestaña debugger y allí navegamos una vez más hasta el archivo `juank.io/assets/js/sctipt.js`
+1. deshabilitamos nuevamente el breakpoint y recargamos la página
+1. el breakpoint no detiene el browser puesto que ha sido deshabilitado
