@@ -120,12 +120,15 @@ En las siguientes tareas se explorán las diferentes herramientas que MS Edge po
 this.testValue = "Hello World Edge Tools";
 ```
 
+##.
+
 26. Ahora al revisar de nuevo en la ventana de inspección (Watches) podemos ver la variable asignada <br/>![Add Watch](img/HOL-35.png)
 1. Desde este mismo panel tambien podemos cambiar el valor de la varible simplemente dando doble click y editando. Asignamos el valor "Hola Mundo Edge Tools"
 1. De regreso a la consola ingresamos el siguiente comando obteniendo en la consola como respuesta la variable con el valor actualizado. Identificar como la consola también ofrece Intellisense en las variables creadas dinámicamante.
 ```
 this.testValue
 ```
+.
 29. De nuevo en el costado derecho, identificar el panel "Call Stack"  <br/>![Call Stack](img/HOL-36.png)
 1. Allí se lista la "Pila de Llamadas" que refleja el orden o anidamiento de funciones que se han ejecutado al llamar una función determinada, esto permite saber que función ha llamado a la función actual en ejecución y así susecivamente hasta identificar toda la cadena de funciones llamadas hasta llegar a la función actual. Dar click en la pestaña Breakpoints. 
 1. Allí se listan los breakpoints creados, hasta el momento solo 1. <br/>![Break Points](img/HOL-37.png)
