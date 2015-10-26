@@ -122,7 +122,7 @@ Ahora vamos adicionar un nuevo evento para hacer click en los "No me gusta"
 4. La función en el controlador actualiza el estado de los datos.
 5. La vista cambia automáticamente y muestra los datos actualizados. La página no necesita ser recargada.
 
-![Alt text](,/assets/lean.png?raw=true "Learn")
+![Alt text](./assets/lean.png?raw=true "Learn")
 
 ## Contribución
 
