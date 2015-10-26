@@ -115,21 +115,19 @@ En las siguientes tareas se explorán las diferentes herramientas que MS Edge po
 1. Desde este panel es posible agregar otras variables a parte de las detectadas automáticamente, presionamos el ícono de agregar inspección y agregamos una nueva variable llamada "this.testValue"<br/>![Add Watch](img/HOL-33.png)
 1.  Esta variable no existe en el código fuente, si existiera nos mostraría su valor tal como lo hace con las adicionadas automáticamente
 1. En la parte inferior del depurador se puede visualizar la consola y justo bajo ella hay un símbolo del sistema <br/>![Add Watch](img/HOL-34.png)
-1. allí podemos ejecutar comandos de javascript, entre ellos crear una nueva variable 'al vuelo' así que crearemos la variable `this.testValue` ejecutando el siguiente comando en la consola (donde esta la flecha)
-```
-this.testValue = "Hello World Edge Tools";
-```
+1. allí podemos ejecutar comandos de javascript, entre ellos crear una nueva variable 'al vuelo' así que crearemos la variable `this.testValue` ejecutando el siguiente comando en la consola (donde esta la flecha) 
 
-##.
-
-26. Ahora al revisar de nuevo en la ventana de inspección (Watches) podemos ver la variable asignada <br/>![Add Watch](img/HOL-35.png)
+    ```
+    this.testValue = "Hello World Edge Tools";
+    ```
+1. Ahora al revisar de nuevo en la ventana de inspección (Watches) podemos ver la variable asignada <br/>![Add Watch](img/HOL-35.png)
 1. Desde este mismo panel tambien podemos cambiar el valor de la varible simplemente dando doble click y editando. Asignamos el valor "Hola Mundo Edge Tools"
 1. De regreso a la consola ingresamos el siguiente comando obteniendo en la consola como respuesta la variable con el valor actualizado. Identificar como la consola también ofrece Intellisense en las variables creadas dinámicamante.
-```
-this.testValue
-```
-.
-29. De nuevo en el costado derecho, identificar el panel "Call Stack"  <br/>![Call Stack](img/HOL-36.png)
+
+    ```
+    this.testValue
+    ```
+1. De nuevo en el costado derecho, identificar el panel "Call Stack"  <br/>![Call Stack](img/HOL-36.png)
 1. Allí se lista la "Pila de Llamadas" que refleja el orden o anidamiento de funciones que se han ejecutado al llamar una función determinada, esto permite saber que función ha llamado a la función actual en ejecución y así susecivamente hasta identificar toda la cadena de funciones llamadas hasta llegar a la función actual. Dar click en la pestaña Breakpoints. 
 1. Allí se listan los breakpoints creados, hasta el momento solo 1. <br/>![Break Points](img/HOL-37.png)
 1. Damos click en el checkbox para deshabilitarlo
