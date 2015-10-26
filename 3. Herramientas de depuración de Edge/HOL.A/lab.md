@@ -1,4 +1,4 @@
-#Herramientas de depuración de Edge
+#Herramientas de Microsoft Edge para Desarrolladores
 
 En este laboratorio aprenderemos a usar las herramientas disponibles en línea y en el browser Microsoft Edge para depurarar aplicaciones web.
 
