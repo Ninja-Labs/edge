@@ -119,6 +119,7 @@ En las siguientes tareas se explorán las diferentes herramientas que MS Edge po
 ```
 this.testValue = "Hello World Edge Tools";
 ```
+
 26. Ahora al revisar de nuevo en la ventana de inspección (Watches) podemos ver la variable asignada <br/>![Add Watch](img/HOL-35.png)
 1. Desde este mismo panel tambien podemos cambiar el valor de la varible simplemente dando doble click y editando. Asignamos el valor "Hola Mundo Edge Tools"
 1. De regreso a la consola ingresamos el siguiente comando obteniendo en la consola como respuesta la variable con el valor actualizado. Identificar como la consola también ofrece Intellisense en las variables creadas dinámicamante.
