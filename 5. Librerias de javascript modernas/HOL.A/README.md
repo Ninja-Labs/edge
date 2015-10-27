@@ -2,6 +2,8 @@
 
 Angularjs es un framework web JavaScript tuvo como objetivo hacer que las aplicaciones web sencillas de construir y fácil de mantener.
 
+[Slides](http://slides.com/khriztianmoreno/js-lib-modern/live#/)
+
 ### Nuestra Primera APP
 
 Vamos a empezar por la construcción de una aplicación angularjs simple. Después de hacer esta aplicación, vamos a generalizar algunos pasos que se pueden utilizar para construir aplicaciones más complejas. Al final de este taller, usted será capaz de utilizar esta secuencia de pasos para poner en marcha sus propios aplicaciones angular.js.
