@@ -160,7 +160,7 @@ alternativo, en ese caso utilizaremos un archivo Flash tal como se hizo en el ej
 ## Tarea 4: Cargando scripts externos con Modernizr y Require.js
 
 Require.js es una de las librerías más utilizadas para cargar scripts externos, y la idea es aprovechar
-dicha librerías para cargar un script externo en el caso que determinada característica no este soportada, 
+dicha librería para cargar un script externo en el caso que determinada característica no este soportada, 
 para verlo en funcionamiento vamos a utilizar el tipo de almacenamiento **sessionStorage** que trabaja con 
 un modelo de diccionario (key - value).
 
