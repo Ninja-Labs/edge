@@ -163,7 +163,52 @@ Ahora, vamos a hacer un ejemplo para que veamos esta detección de features en f
  Luego probamos en Microsoft Edge, y el resultado es el siguiente:
   
  ![Edge feature detection](/1. Detección de caracteristicas con Modernizr/HOL.A/Img/Css/02.png?raw=true "Chrome feature detection")
- 
+
+## Tarea 4: Creando tests personalizados para detectar features
+
+Así como Modernizr es capaz de detectar las características para las que tiene soporte, nosotros también podemos crear nuestros tests personalizados para casos específicos que necesitemos. A continuación, vamos a ver un ejemplo de ello: 
+
+1. En primer lugar, vamos a crear un archivo html en la misma carpeta donde tenemos el archivo de la librería Modernizr con el siguiente código:
+
+	```html
+	<!DOCTYPE html>
+	
+	<html>
+	<head>
+		<script src = "modernizr-custom.js"></script>
+		<title>Modernizr test</title>
+	</head>
+	
+	<body>
+		<h1>Modernizr test - Custom tests</h1>
+	</body>
+	</html>
+	```
+
+1. Luego de esto, adicionamos el siguiente script luego de la etiqueta `<body>` en el html:
+
+	```html
+	<script>
+		// Este es el test que creamos.
+		Modernizr.addTest('martes', function() {
+			var d = new Date();
+			return d.getDay() === 2;			
+		});
+		
+		// Ahora probamos el test anterior.
+		if ( Modernizr.martes ) {
+			alert("Es martes!");
+		} 
+		else {
+			alert("No es martes!");
+		}
+	</script>
+	```
+
+1. Ahora, podemos abrir la página web que creamos en el navegador y ver el resultado de nuestro test.
+
+ ![Chrome feature detection](/1. Detección de caracteristicas con Modernizr/HOL.A/Img/CustomTest/01.png?raw=true "Chrome feature detection")
+  
 ## Enlaces recomendados
 
 * Página oficial de [Modernizr](https://modernizr.com)

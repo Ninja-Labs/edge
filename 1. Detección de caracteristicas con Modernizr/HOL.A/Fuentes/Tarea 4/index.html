@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Modernizr test</title>
+    <script src="modernizr-custom.js"></script>	
+</head>
+
+<body>
+    <h1>Modernizr test - Custom tests</h1>
+</body>
+<script>
+     // Este es el test que creamos.
+     Modernizr.addTest('martes', function() {
+         var d = new Date();
+         return d.getDay() === 2;            
+     });
+
+     // Ahora probamos el test anterior.
+     if ( Modernizr.martes ) {
+         alert("Es martes!");
+     } 
+     else {
+         alert("No es martes!");
+     }
+ </script>
+
+</html>
