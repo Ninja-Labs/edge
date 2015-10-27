@@ -155,7 +155,7 @@ alternativo, en ese caso utilizaremos un archivo Flash tal como se hizo en el ej
 </script>
 ```
 
-#### Hemos visto como Modernizr es totalmente independiente del browser, así pensamos en soporte de caraterísticas y no en browsers y versiones de cada uno.
+#### Hemos visto como Modernizr es totalmente independiente del browser, así pensamos en soporte de caraterísticas y no en browsers ni versiones de cada uno.
 
 ## Tarea 4: Cargando scripts externos con Modernizr y Require.js
 
@@ -284,3 +284,5 @@ var init = function()
 window.onload = init;
 </script>
 ```
+
+#### Este ejemplo tiene como fin ejemplificar el uso de Modernizr junto con Require.js, pero no es una versión para entornos de producción.
