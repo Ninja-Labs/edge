@@ -27,7 +27,7 @@ En este laboratorio aprenderemos a crear un reproductor multimedia usando los co
 1. Crear un archivo .html (Puedes usar un editor que te permita crear este tipo de archivo, o en bloc de notas usar la opción de guardar como...)
 1. Una vez creado el archivo implementar la siguiente estructura básica de Html5
 
-![Estructura básica](/2. Evitar el uso de plugins utilizando HTML5/HOL.A/img/2-EstructuraBasica.png?raw=true "Estructura básica")
+![Estructura básica](/2. Evitar el uso de plugins utilizando HTML5/HOL.A/Img/2-EstructuraBasica.png?raw=true "Estructura básica")
 
 1. Con esto optendremos el siguiente resultado<br/>![Estructura básica](img/3-ResultadoEstructuraBasica.png)
 
