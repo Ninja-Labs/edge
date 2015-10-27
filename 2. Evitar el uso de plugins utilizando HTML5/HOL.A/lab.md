@@ -22,7 +22,7 @@ En este laboratorio aprenderemos a crear un reproductor multimedia usando los co
 
 ## Tarea 1 - Creando una estructura básica en Html5
 
-1. Crear una carpeta llamada HolReproductor
+1. Crear una carpeta llamada HolReproductor.
 1. Copia las carpetas Videos y audios en esta carpeta
 1. Crear un archivo .html (Puedes usar un editor que te permita crear este tipo de archivo, o en bloc de notas usar la opción de guardar como...)
 1. Una vez creado el archivo implementar la siguiente estructura básica de Html5
