@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Video HTML5</title>
+    <script type="text/javascript" src="scripts/modernizr-custom.js"></script>
+    <script type="text/javascript">
+        var testVideoSupport = function(){
+            if (Modernizr.video){
+                alert('El browser soporta video HTML5');
+            }
+            else{
+                alert('El browser NO soporta video HTML5, usar Flash en este caso');
+                var videoContainer = document.getElementById("videoContainer");
+                var flashVideo = "<iframe src='https://channel9.msdn.com/Blogs/BeLux-Developer/Getting-Started-with-Visual-Studio-Code/player?format=flash#autoplay' width='600' height='600' allowFullScreen frameBorder='0'></iframe>";
+                videoContainer.innerHTML = flashVideo;
+            }
+        }
+        window.onload = testVideoSupport;
+    </script>
+</head>
+<body>
+    <h1>Video en HTML5 - Modernizr</h1>
+    <hr>
+    <div id="videoContainer">
+		<video src="https://sec.ch9.ms/ch9/9060/3c2c8d35-dd14-4c4e-a454-6f490f799060/VScodegettingstarted_high.mp4" 
+			controls="controls" autoplay="autoplay" 
+			height="600px" width="600px">
+		</video>
+	<div>
+    <hr>
+    <a href="https://twitter.com/julitogtu">@julitogtu</a>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Video HTML5</title>
+    <!--[if lte IE 8]>
+    <script type="text/javascript">
+        var addFlash = function(){
+            var videoContainer = document.getElementById("videoContainer");
+            var flashVideo = "<iframe src='https://channel9.msdn.com/Blogs/BeLux-Developer/Getting-Started-with-Visual-Studio-Code/player?format=flash#autoplay' width='600' height='600' allowFullScreen frameBorder='0'></iframe>";
+            videoContainer.innerHTML = flashVideo;
+        };
+        window.onload = addFlash;
+    </script>
+    <![endif]-->
+</head>
+<body>
+    <h1>Video en HTML5</h1>
+    <hr>
+    <div id="videoContainer">
+		<video src="https://sec.ch9.ms/ch9/9060/3c2c8d35-dd14-4c4e-a454-6f490f799060/VScodegettingstarted_high.mp4" 
+			controls="controls" autoplay="autoplay" 
+			height="600px" width="600px">
+		</video>
+	<div>
+    <hr>
+    <a href="https://twitter.com/julitogtu">@julitogtu</a>
+</body>
+</html>
