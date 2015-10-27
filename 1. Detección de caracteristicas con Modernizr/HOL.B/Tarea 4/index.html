@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>sessionStorage HTML5</title>
+    <script type="text/javascript">
+    var init = function()
+    {
+        var i = 1;
+        var button = document.getElementById("addTask");
+        button.onclick = function(){
+            var task = document.getElementById("task");
+            var items = document.getElementById("items");
+            sessionStorage.setItem('Task ' + i,task.value);
+            var li = document.createElement("li");
+            li.textContent = 'Task ' + i + " - " + task.value;
+            items.appendChild(li);
+            task.value = "";
+            i++;
+        }
+    }
+    window.onload = init;
+</script>
+</head>
+<body>
+    <h1>sessionStorage en HTML5</h1>
+    <hr>
+    <div>
+		<input type="text" placeholder="Type something" id="task">
+		<input type="button" value="Add taks" id="addTask">
+        <hr>
+        <ul id="items"></ul>
+	<div>
+    <hr>
+    <a href="https://twitter.com/julitogtu">@julitogtu</a>
+</body>
+</html>

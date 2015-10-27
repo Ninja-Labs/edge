@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>sessionStorage HTML5</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../scripts/modernizr-custom.js"></script>
+    <script type="text/javascript" src="../scripts/require.js"></script>
+    <script type="text/javascript">
+    var init = function()
+    {
+        if (!Modernizr.sessionstorage){
+            require(["../scripts/jstorage.js"], function(){
+                console.log("jstorage.js loaded!");
+                window.customSessionStorage = $.jStorage;
+                customSessionStorage.setItem = customSessionStorage.set;
+                customSessionStorage.getItem = customSessionStorage.get;
+            });
+        }
+        else
+        {
+            customSessionStorage = window.sessionStorage;
+        }
+        
+        var i = 1;
+        var button = document.getElementById("addTask");
+        button.onclick = function(){
+            var task = document.getElementById("task");
+            customSessionStorage.setItem('Task ' + i,task.value);
+            $("#items").append("<li> Task " + i + " - " + task.value + "</li>");
+            task.value = "";
+            i++;
+        }
+    }
+    window.onload = init;
+    </script>
+</head>
+<body>
+    <h1>sessionStorage en HTML5</h1>
+    <hr>
+    <div>
+		<input type="text" placeholder="Type something" id="task">
+		<input type="button" value="Add taks" id="addTask">
+        <hr>
+        <ul id="items"></ul>
+	<div>
+    <hr>
+    <a href="https://twitter.com/julitogtu">@julitogtu</a>
+</body>
+</html>

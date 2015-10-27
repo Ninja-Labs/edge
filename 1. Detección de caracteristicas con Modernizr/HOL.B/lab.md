@@ -155,4 +155,98 @@ alternativo, en ese caso utilizaremos un archivo Flash tal como se hizo en el ej
 </script>
 ```
 
-### Hemos visto como Modernizr es totalmente independiente del browser, así pensamos en soporte de caraterísticas y no en browsers y versiones de cada uno.
+#### Hemos visto como Modernizr es totalmente independiente del browser, así pensamos en soporte de caraterísticas y no en browsers y versiones de cada uno.
+
+## Tarea 4: Cargando scripts externos con Modernizr y Require.js
+
+Require.js es una de las librerías más utilizadas para cargar scripts externos, y la idea es aprovechar
+dicha librerías para cargar un script externo en el caso que determinada característica no este soportada, 
+para verlo en funcionamiento vamos a utilizar el tipo de almacenamiento **sessionStorage** que trabaja con 
+un modelo de diccionario (key - value).
+
+La sintaxis (no la única posible) para leer/escribir de sessionStorage es:
+
+```javascript
+//Write
+sessionStorage.setItem('key', 'value');
+
+//Read
+sessionStorage.getItem('key');
+```
+
+* Primero, vamos a crear un nuevo documento HTML, la página simplemente va a tener una caje de texto y un botón para ir
+guardando lo que se va escribiendo, así mismo una lista para ir mostrando los diferentes items almacenados:
+
+```html
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>sessionStorage HTML5</title>
+</head>
+<body>
+    <h1>sessionStorage en HTML5</h1>
+    <hr>
+    <div>
+		<input type="text" placeholder="Type something" id="task">
+		<input type="button" value="Add taks" id="addTask">
+        <ul id="items"></ul>
+	<div>
+    <hr>
+    <a href="https://twitter.com/julitogtu">@julitogtu</a>
+</body>
+</html>
+```
+
+* La idea, es ir guardando cada tarea en sessionStorage, por lo cual se debe agregar un manejador para el evento click del
+botón y allí hacer el llamado a **sessionStorage.setItem**, para ello, dentro del `<head>` adicional el siguiente script:
+
+```javascript
+<script type="text/javascript">
+    var init = function()
+    {
+        var i = 1;
+        var button = document.getElementById("addTask");
+        button.onclick = function(){
+            var task = document.getElementById("task");
+            var items = document.getElementById("items");
+            sessionStorage.setItem('Task ' + i,task.value);
+            var li = document.createElement("li");
+            li.textContent = 'Task ' + i + " - " + task.value;
+            items.appendChild(li);
+            task.value = "";
+            i++;
+        }
+    }
+    window.onload = init;
+</script>
+```
+
+* Ahora, abrir el documento en un browser e ir agregando tareas, en las herramientas de desarrollo de Firefox se tiene la posibilidad de 
+visualizar ese sessionStorage:
+
+![sessionStorage HTML5](http://res.cloudinary.com/julitogtu/image/upload/v1445963171/sessionStorage1_utirhe.png)
+
+* Al igual que el demo anterior, vamos a agregar la referencia a la líbreria Modernizr en el `<head>` del documento (en este punto, descargar de nuevo Modernizr agregando la característica de sessionStorage),
+luego de adiciona la librería, si validamos nuevamente en Internet Explorer 11 o inferior, efectivamente no se tiene soporte a sessionStorage:
+
+![Modernizr no-sessionStorage](http://res.cloudinary.com/julitogtu/image/upload/v1445964430/sessionStorage2_shph3p.png)
+
+* Como primer paso para dar soporte a sessionStorga, nos vamos a aportar el la librería [jStorage](http://www.jstorage.info/), así que descargar la 
+librería y adicionarla en la carpeta de scripts. (el archivo se encuentra en la carpeta Tarea 4 - index2.html)
+
+* Adicionalmente, descargamos y referencias la librería [Require.js](http://requirejs.org/) y la referenciamos en el archivo HTML.
+
+* Y finalmente referenciamos la librería [jQuery](https://jquery.com/) ya que es utilizada por el plugin jStorage.
+
+* En el momento, las referencias a las librerías en el `<head>` deben verse así: 
+
+```javascript
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script type="text/javascript" src="../scripts/modernizr-custom.js"></script>
+<script type="text/javascript" src="../scripts/require.js"></script>
+```
+
+* El siguiente paso, nuestro código JavaScript, primero con **Modernizr.sessionstorage** identificamos si tenemos soporte
+o no a sessionstorage, en caso negativo cargamos explicitamente el plugin **jStorage** aprovechando
+que tenemos **Require.js** 
