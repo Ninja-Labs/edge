@@ -18,7 +18,7 @@ En este laboratorio aprenderemos a crear un reproductor multimedia usando los co
 
 ## Para cuando termines de implementar el laboratorio tendrás un reproductor multimedia como el siguiente
 
-<br/>![Resultado final](img/1-ResultadoFinal.jpg)
+<br/>![Resultado final](/2. Evitar el uso de plugins utilizando HTML5/HOL.A/img/1-ResultadoFinal.jpg)
 
 ## Tarea 1 - Creando una estructura básica en Html5
 
