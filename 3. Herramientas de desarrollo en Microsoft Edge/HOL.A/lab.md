@@ -151,10 +151,10 @@ En las siguientes tareas se explorán las diferentes herramientas que MS Edge po
 	* Cookies
     ![Stop](img/HOL-42.png)
 
-
+<!--
 ##Tarea 6 - Performance
 ##Tarea 7 - Memoria
 ##Tarea 8 - Emulación
 
-
+-->
 
