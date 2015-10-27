@@ -78,7 +78,7 @@ En este laboratorio aprenderemos a crear un reproductor multimedia usando los co
 1. En primera instancia vamos a agregar una etiqueta script al final del body, recuerda en Html5 ya no es necesario especificar el type/text dado que JS es su lenguaje por defecto
 1. Adicionalmente recuerda que es buena práctica codificar nuestro scripts al finalizar la página, de este modo el browser podrá renderizar el Html que es lo primero que ve el usuario y luego seguirá renderizando los scripts
 1. En primer lugar definimos la sección de scripts y obtenermos a través de JavaScript los controles de reproducción para posteriormente manipularlos![Incio Script](./Img/12-DefinicionScripts.PNG?raw=true "Incio Script")
-1. Posteriormente vamos a implementar los métodos necesarios para la manipulación del reproductor de vídeos![Incio Script](./Img/13-VideoCode.png?raw=true "Incio Script")
+1. Posteriormente vamos a implementar los métodos necesarios para la manipulación del reproductor de vídeos![Incio Script](./Img/13-VideoCode.PNG?raw=true "Incio Script")
 1. Observa que el método CambiarVideo recibe dos parámetros urlVideo, con el cual iniciar la reproducción del vídeo indicado y nombre, del cual más adelante veremos su utilidad
 1. Observa que en este mismo método se estña ocultando y pausando el reproductor de audio
 1. Observa que en este mismo método se establece cual será el vídeo a reproducir y se inicia su reproducción enseguida
