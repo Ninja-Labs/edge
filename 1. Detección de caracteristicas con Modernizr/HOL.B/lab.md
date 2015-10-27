@@ -249,4 +249,38 @@ librería y adicionarla en la carpeta de scripts. (el archivo se encuentra en la
 
 * El siguiente paso, nuestro código JavaScript, primero con **Modernizr.sessionstorage** identificamos si tenemos soporte
 o no a sessionstorage, en caso negativo cargamos explicitamente el plugin **jStorage** aprovechando
-que tenemos **Require.js** 
+que tenemos **Require.js**, y finalmente, creamos un objeto llamado **customSessionStorage**
+el cual va a ser un "wrapper" para el plugin referenciado en caso de no tener soporte de sessionStorage,
+y en caso de si tener soporte simplemente le asignamos lo que tiene actualmente sessionStorage, así
+tenemos un único objeto con el cual trabajar:
+
+```javascript
+<script type="text/javascript">
+var init = function()
+{
+	if (!Modernizr.sessionstorage){
+		require(["../scripts/jstorage.js"], function(){
+			console.log("jstorage.js loaded!");
+			window.customSessionStorage = $.jStorage;
+			customSessionStorage.setItem = customSessionStorage.set;
+			customSessionStorage.getItem = customSessionStorage.get;
+		});
+	}
+	else
+	{
+		customSessionStorage = window.sessionStorage;
+	}
+	
+	var i = 1;
+	var button = document.getElementById("addTask");
+	button.onclick = function(){
+		var task = document.getElementById("task");
+		customSessionStorage.setItem('Task ' + i,task.value);
+		$("#items").append("<li> Task " + i + " - " + task.value + "</li>");
+		task.value = "";
+		i++;
+	}
+}
+window.onload = init;
+</script>
+```
