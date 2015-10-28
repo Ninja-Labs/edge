@@ -1,0 +1,264 @@
+﻿/* ----------- INICIO Estilos Fuentes de texto */
+
+
+
+/* ----------- FIN Estilos Fuentes de texto */
+
+
+/* ----------- INICIO genericos */
+html{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	margin: 0px;
+	background-color: #000;
+	color: #fff;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-image: url(../images/fondwebpage.png);
+
+	width: 100%;
+	height: 100%;
+}
+
+header,
+section,
+menu,
+nav,
+footer,
+hgroup{
+	margin: 0px;
+	padding: 0px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.ocultar{
+	display:none;
+}
+
+/* ----------- FIN genericos */
+
+
+/* ----------- INICIO Diagramacion y contenidos */
+
+#wrapper{
+	width: 100%;
+	height: 100%;
+}
+
+	#header{
+		background-color: #f00;
+		top: 0px;	}
+	
+		
+		#header #identidad{
+			position: absolute;
+			right: 0px;
+			top: 42%;
+			width: 70px;
+			height: 130px;
+			background-color: #FFF;
+			border-radius: 10px 0px 0px 10px;
+			background-image: url('../images/identidad.png');
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+			transition: all 1s;
+		}
+		
+		#header #identidad:hover{
+			width: 130px;
+		}
+		
+			#header h1{
+				margin:0px;
+				width: 100%;
+				height: 130px;
+			}
+			
+				#header h1 a{
+					display: block;
+					width: 100%;
+					height: 130px;
+				}
+				
+					#header h1 a span{
+						display: none;
+					}
+					
+			#header h4{
+				display: none;
+			}
+		
+		#header #redes{
+			position: absolute;
+			right: 0px;
+			top: 65%;
+			width: 130px;
+		}
+		
+			#header #redes ul,
+			#header #redes ul li{
+				margin: 0px;
+				padding: 0px;
+				list-style: none;
+				List-style-type: none;
+			}
+			
+				#header #redes ul{
+					margin-left: 62px;
+					border-bottom: 3px solid #666;
+				}
+				
+					#header #redes ul li{
+						float: left;
+						
+					}
+					
+						#header #redes ul li a{
+							display: block;
+							width: 24px;
+							height: 24px;
+							margin-top: -10px;
+						}
+						
+							.btnFacebook{
+								background-image: url("../images/redes.png");
+								background-position: left;
+								
+								margin-left: -62px;
+							}
+							
+								.btnFacebook:hover{
+									background-image: url("../images/redes-over.png");
+								}
+							
+							.btnFlickr{
+								background-image: url("../images/redes.png");
+								background-position: -33px;
+								
+								margin-left: -28px;
+							}
+							
+								.btnFlickr:hover{
+									background-image: url("../images/redes-over.png");
+								}
+						
+							#header #redes ul li a span{
+								display: none;
+							}
+	
+	#contenidos{
+		width: 100%;
+		height: 100%;
+	}
+	
+		#contenidos .proyecto{
+			display: none;
+		}
+		
+			#contenidos .proyecto .listaImagenesProyecto{
+				background-color: rgb(0,0,0);
+				background-position: center;
+				background-repeat:repeat;
+				width: 80%;
+				margin:auto;
+				padding: 0px 10px;
+				overflow: hidden;
+				border-radius: 0px 0px 8px 8px;
+			}
+			
+				#contenidos .proyecto .listaImagenesProyecto menu{
+					display: inline;
+				}
+			
+				#contenidos .proyecto .listaImagenesProyecto ul{
+					display: block;
+					width: 100%;
+					margin: 0px;
+					padding: 0px 20px;
+				}
+				
+				#contenidos .proyecto .listaImagenesProyecto ul:hover{
+					margin-top: 0px;
+				}
+				
+					#contenidos .proyecto .listaImagenesProyecto ul li{
+						float: left;
+						margin: 0px;
+						padding: 0px;
+						list-style: none;
+						list-style-image:none;
+						list-style-type:none;
+					}
+					
+						#contenidos .proyecto .listaImagenesProyecto ul li a{
+							display: block;
+							width: 190px;
+							height: 50px;
+							cursor: pointer;
+							margin: 0px 5px;
+							background-position:center;
+							background-repeat:no-repeat;
+						}
+						
+						/* Simularemos con estas imágenes el comportamiento de la lista de posibles imagenes */
+						#contenidos .proyecto .listaImagenesProyecto ul li:nth-child(1) a{
+							background-image:url(../uploads/pic-rojored-a.jpg)
+						}
+						
+						#contenidos .proyecto .listaImagenesProyecto ul li:nth-child(2) a{
+							background-image:url(../uploads/pic-rojored-b.jpg)
+						}
+						
+						#contenidos .proyecto .listaImagenesProyecto ul li:nth-child(3) a{
+							background-image:url(../uploads/pic-rojored-c.jpg)
+						}
+						
+						#contenidos .proyecto .listaImagenesProyecto ul li:nth-child(4) a{
+							background-image:url(../uploads/pic-rojored-d.jpg)
+						}
+						
+						#contenidos .proyecto .listaImagenesProyecto ul li:nth-child(5) a{
+							background-image:url(../uploads/pic-rojored-e.jpg)
+						}
+						
+							#contenidos .proyecto .listaImagenesProyecto ul li a span{
+								display: none;
+							}
+				
+				#contenidos .proyecto .vinculoTrabajo{
+					position: absolute;
+					display:none;
+					opacity: 0;
+					top: 0px;
+					left: 0px;
+					height: 100%;
+					width: 100%;
+					z-index: -10;
+					text-align:center;
+				}
+
+					#contenidos img.imagenProyecto{
+						text-align: center;
+						margin:auto;
+						max-height: 100%;
+						max-width: 100%;
+					}
+	
+	#footer{
+		display: none;
+	}
+
+/* ----------- FIN Diagramacion y contenidos */
+
+
+/* ----------- INICIO Textos y colores */
+
+
+
+/* ----------- FIN Textos y colores */
