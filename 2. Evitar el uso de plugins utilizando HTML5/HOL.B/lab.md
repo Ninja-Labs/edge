@@ -80,40 +80,41 @@ Debemos partir de la idea que trabajas con un disenador gráfico que dejó listo
 
 1. Asigna los nombres de los medios de transporte en los Items de lista de la Columna B
 
-	<div class="columnaOpcionesB">
-		<ul>
-			<li class="itemColumna">
-				<div id="columnaConectableB-objeto-" class="conectable">
-					<div class="contenidoItemColumnaConectableB"> <strong>AUTOMÓVIL</strong> </div>
-				</div>
-			</li>
-			<li class="itemColumna">
-				<div id="columnaConectableB-objeto-" class="conectable">
-					<div class="contenidoItemColumnaConectableB"> <strong>MOTOCICLETA</strong> </div>
-				</div>
-			</li>
-			<li class="itemColumna">
-				<div id="columnaConectableB-objeto-" class="conectable">
-					<div class="contenidoItemColumnaConectableB"> <strong>METRO</strong> </div>
-				</div>
-			</li>
-			<li class="itemColumna">
-				<div id="columnaConectableB-objeto-" class="conectable">
-					<div class="contenidoItemColumnaConectableB"> <strong>HELICÓPTERO</strong> </div>
-				</div>
-			</li>
-			<li class="itemColumna">
-				<div id="columnaConectableB-objeto-" class="conectable">
-					<div class="contenidoItemColumnaConectableB"> <strong>AVIÓN</strong> </div>
-				</div>
-			</li>
-			<li class="itemColumna">
-				<div id="columnaConectableB-objeto-" class="conectable">
-					<div class="contenidoItemColumnaConectableB"> <strong>BICICLETA</strong> </div>
-				</div>
-			</li>
-		</ul>
-	</div>
+	
+		<div class="columnaOpcionesB">
+			<ul>
+				<li class="itemColumna">
+					<div id="columnaConectableB-objeto-" class="conectable">
+						<div class="contenidoItemColumnaConectableB"> <strong>AUTOMÓVIL</strong> </div>
+					</div>
+				</li>
+				<li class="itemColumna">
+					<div id="columnaConectableB-objeto-" class="conectable">
+						<div class="contenidoItemColumnaConectableB"> <strong>MOTOCICLETA</strong> </div>
+					</div>
+				</li>
+				<li class="itemColumna">
+					<div id="columnaConectableB-objeto-" class="conectable">
+						<div class="contenidoItemColumnaConectableB"> <strong>METRO</strong> </div>
+					</div>
+				</li>
+				<li class="itemColumna">
+					<div id="columnaConectableB-objeto-" class="conectable">
+						<div class="contenidoItemColumnaConectableB"> <strong>HELICÓPTERO</strong> </div>
+					</div>
+				</li>
+				<li class="itemColumna">
+					<div id="columnaConectableB-objeto-" class="conectable">
+						<div class="contenidoItemColumnaConectableB"> <strong>AVIÓN</strong> </div>
+					</div>
+				</li>
+				<li class="itemColumna">
+					<div id="columnaConectableB-objeto-" class="conectable">
+						<div class="contenidoItemColumnaConectableB"> <strong>BICICLETA</strong> </div>
+					</div>
+				</li>
+			</ul>
+		</div>
 
 1. Para la Columna A, crea dentro del item de lista (y para cada una de los items de lista) un atributo llamado data-answer, que usaremos para definir cual esl número del item de su pareja
 		
@@ -662,15 +663,15 @@ _En este momento, si el usuario dibuja una línea y conecta correctamente los it
 1. Incluye al final del CSS estos apuntadores: El primero define las propiedades de la etiqueta SVG y el segundo asigna otros valores a las propiedades cuando el mouse se encuentra sobre el div padre del SVG
 
 
-	#cvjl-AcDs #preguntas .preguntaTipoConectarColumnas .columnaOpcionesA .itemColumna .conectable .contenidoItemColumnaConectableA SVG{
-		transition:all 1s;
-		transform: perspective(400px) rotateY(0deg);
-		position:relative;
-	}
-	
-	#cvjl-AcDs #preguntas .preguntaTipoConectarColumnas .columnaOpcionesA .itemColumna .conectable .contenidoItemColumnaConectableA:hover SVG{
-		transform: perspective(400px) rotateY(410deg);
-		width: 80px;
-		height: 80px;
-		z-index: 20;
-	}
+		#cvjl-AcDs #preguntas .preguntaTipoConectarColumnas .columnaOpcionesA .itemColumna .conectable .contenidoItemColumnaConectableA SVG{
+			transition:all 1s;
+			transform: perspective(400px) rotateY(0deg);
+			position:relative;
+		}
+		
+		#cvjl-AcDs #preguntas .preguntaTipoConectarColumnas .columnaOpcionesA .itemColumna .conectable .contenidoItemColumnaConectableA:hover SVG{
+			transform: perspective(400px) rotateY(410deg);
+			width: 80px;
+			height: 80px;
+			z-index: 20;
+		}
